@@ -1,0 +1,49 @@
+.location-container {
+  width: 100vw;
+  display: flex;
+  background-color: #f5f5f5;
+}
+
+.planets-list {
+  width: 90%;
+  margin: 5rem auto;
+
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+.about-location {
+  width: 80%;
+  margin: auto;
+  padding: 3rem 2rem;
+
+  border: 1px solid #22222236;
+}
+
+.about-location a {
+  font-size: 2.8rem;
+  line-height: 4rem;
+  font-weight: 700;
+  font-family: Rubik, sans-serif;
+
+  text-decoration: none;
+  color: #232323;
+}
+
+.about-location a:hover {
+  text-decoration: underline;
+}
+
+
+.about-location p {
+  font-family: Rubik, sans-serif;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+}
+
+@media(min-width: 800px) {
+  .planets-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
