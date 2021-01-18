@@ -27,8 +27,8 @@ export default function Location() {
           {location.results && (
             location.results.map(location => {
               return (
-                <div className="about-location">
-                  <a href="">{location.name}</a>
+                <div className="about-location" key={location.id}>
+                  <a href={`location/${location.id}`}>{location.name}</a>
 
                   <p>Type - {location.type}</p>
                   <p>Dimension - {location.dimension}</p>

@@ -28,13 +28,12 @@ export default function Main() {
         <div className="list-container">
           {character.results && (character.results.map(info => {
             return (
-              <div className="character-info" >
+              <div className="character-info" key={info.id} >
                 <img src={info.image} alt="image" />
                 <div className="info">
-                  <h1>{info.name}</h1>
-                  <p>{info.gender} - {info.status}
-                  </p>
-                  <p>Specie {info.species} </p>
+                  <a href={`/character/${info.id}`}>{info.name}</a>
+                  <p>{info.gender} - {info.status} </p>
+                  <p>Specie: {info.species} </p>
 
                   <div className="localization">
                     <span>Last known locatilazion</span>

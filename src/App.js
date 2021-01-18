@@ -5,14 +5,16 @@ import './App.css';
 import Main from './pages/Main';
 import Location from './pages/Location';
 import Character from './pages/Character';
+import SpecificLocation from './pages/SpecificLocation';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Route exact path="/" component={Main} />
-        <Route path="/location" component={Location} />
+        <Route exact path="/location" component={Location} />
         <Route path="/character/:id" component={Character} />
+        <Route path="/location/:id" component={SpecificLocation} />
       </Router>
     </div>
   );

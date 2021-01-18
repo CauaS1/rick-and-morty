@@ -1,7 +1,7 @@
 .main-container {
   width: 100vw;
   display: flex;
-  background-color: #f5f5f5;
+  background-color: #f7f7f7;
 }
 
 .list-container {
@@ -14,7 +14,7 @@
 }
 
 .character-info {
-  border: 1px solid #22222263;
+  border: 1px solid #9381ff63;
   border-radius: .5rem;
 
   display: flex;
@@ -32,14 +32,19 @@
   padding: 1.5rem 1rem;
 }
 
-.character-info .info h1 {
+.character-info .info a {
   font-family: Rubik, sans-serif;
   font-weight: 600;
   font-size: 2.3rem;
 
+  text-decoration: none;
   color: #232323;
   margin-bottom: 1rem;
-  border-bottom: 1px solid #22222263;
+  /* border-bottom: 1px solid #9381ff63; */
+}
+
+.info a:hover {
+  text-decoration: underline;
 }
 
 .character-info .info p {
@@ -54,7 +59,7 @@
   width: 100%;
   padding: .5rem 0;
   margin-top: 2rem;
-  border-top: 1px solid #22222263;
+  border-top: 1px solid #9381ff63;
 }
 
 .localization span {
