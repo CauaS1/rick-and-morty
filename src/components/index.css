@@ -24,3 +24,19 @@
   color: #f5f5f5;
 }
 
+.others {
+  width: 13rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.others a {
+  font-size: 1.6rem;
+  transition: opacity .2s;
+}
+
+.others a:hover {
+  opacity: .8;
+  text-decoration: underline;
+}
+

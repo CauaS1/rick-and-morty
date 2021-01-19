@@ -25,16 +25,12 @@ export default function Character(props) {
         {character && (
           <div className="character">
             <img src={character.image} alt="" />
+            <h1>{character.name} - ID:{character.id}</h1>
             <div className="information">
-              <h1>{character.name} - ID:{character.id}</h1>
-              <span>Basic Info</span>
-              <p>Status: {character.status}</p>
+              <h5>BASIC INFO</h5>
+              <p>Currently Status: {character.status}</p>
               <p>Gender: {character.gender}</p>
-              <p>Specie: {character.species}</p>
-              <span>Origin</span>
-              {/* <p>From: {character.origin.name} - */}
-                 {/* <a href="/location">About this planet</a> */}
-              {/* </p> */}
+              <p>Native Specie: {character.species}</p>
             </div>
           </div>
         )}
